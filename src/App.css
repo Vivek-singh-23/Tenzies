@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #0B2434;
+  padding: 80px;
+}
+
+main{
+  background-color: white;
+  height: 575px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.dice-container{
+  position: fixed;
+  display: grid;
+  gap: 20px;
+  grid-template:auto auto / repeat(5,1fr)
+}
+
+.dice-face{
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-left: 20px;
+}
+
+.dice--text{
+  font-size:50px;
+}
+
+.roll--btn{
+  bottom: 150px;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  
+}
+
+.Confetti{
+  width: 100%;
+}
+
+.main--header--glow {
+  font-size: 50px;
+  color: red;
+  position: absolute;
+  top: 50px;
+
+  /* animation */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.main--text{
+  position: absolute;
+  font-size: 25px;
+  top: 150px;
+}
